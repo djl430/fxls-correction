@@ -1,12 +1,9 @@
-# AI 智批产品标注稿
+# AI 智批产品演示稿
 
-直接打开 index.html 即可查看静态演示；ai-correction-review.html 内容相同。
+打开 index.html 即可运行，无需本地服务。可将此目录内容发布到 GitHub Pages。
 
-- 包含 13 条数字标注、流程切换、模拟执行过程与右侧复核。
-- 样式和脚本已内嵌，无需 Python 服务。
-- 仅使用虚构示例，不包含真实学生作业，不调用批改接口。
-- 改判仅在当前页面有效；支持下载当前示例结果。
+复核页直接复用 homework-correction/assets/review-template.html、review-layout.js、review-export.js 和内置批改符号；不是简化替代界面。
 
-可将本目录上传至 GitHub 并启用 Pages。无需上传项目其他目录。
+作业图片和学生信息均为虚构示例，全部内嵌，不上传文件、不调用批改接口。支持原模板的按题查看、按学生查看、改判和整批 ZIP 下载。静态版改判仅在浏览器中保存，不代表 Agent 或本地文件同步已实现。
 
-重新生成：在项目根目录运行 `node scripts/build-static-product.cjs`。
+重新生成：在父项目执行 node scripts/build-static-product.cjs。
